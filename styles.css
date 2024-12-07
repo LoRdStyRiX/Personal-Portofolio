@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::selection {
+  background: #CCC8AA;
+}
+
+.selector {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.navbar{
+  z-index: 500;
+}
+
+/* FONTS =========================================================================================================================================================*/
+
+
+#title-style-1 {
+  font-family: 'syne'; /* Make sure the font name is correct */
+  font-style: normal;
+  font-weight: 500;
+}
+
+#title-style-2-italic {
+  font-family: albra light italic; /* Make sure the font name matches Tailwind config */
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -2
+}
+
+.navbar-font {
+  font-family: 'Helvetica Neue 55', sans-serif; /* Make sure the font name is correct */
+  font-style: normal;
+}
+
+.font-style-italic{
+  font-family: albra light italic;
+}
+
+.font-style-normal{
+  font-family: syne;
+}
+
+/* NAVBAR TEXT HOVER ANIMATION ================================================================================================================================== */
+
+.link {
+  height: 30px;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+}
+
+/* Hide extra text */
+.mask {
+  position: relative;
+  height: 20px;
+
+  /*  Remove overflow to see how it works　:) */
+  overflow: hidden;
+}
+
+.link-container {
+  transition: transform 0.4s ease;
+}
+
+.title {
+  display: block;
+
+  /*  Set same font-size and line height  */
+  font-size: 20px;
+  line-height: 20px;
+
+  transition: transform 0.4s ease;
+}
+
+.link-title1 {
+  transform-origin: right center;
+}
+
+.link-title2 {
+  transform-origin: left center;
+  transform: rotate(20deg);
+}
+
+/* Move up two texts (20px = font-size) */
+.link:hover .link-container {
+  transform: translateY(-20px);
+}
+
+/* Rotate texts a little bit */
+.link:hover .link-title1 {
+  transform: rotate(20deg);
+}
+
+.link:hover .link-title2 {
+  transform: rotate(0);
+}
+
+
+/* HOVER ANIMATION */
+
+.hover-anim {
+  display: inline-block;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  
+  &:hover {
+    transform: translateY(-5px);
+    color: lighten(#03c, 15%);
+  }
+}
+
+#title-style-1,
+#title-style-2-italic {
+  clip-path: url(#mask); /* Use 'mask' if using an SVG mask and define the SVG with <defs> */
+  /* Or, if using a simple geometric clip-path: */
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);  */
+}
+
+

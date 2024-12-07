@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rei ✶</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+    <!-- FONT LINKS -->
+
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/sharpe-personal" rel="stylesheet" />
+    <link href="https://db.onlinewebfonts.com/c/41bf89b135a05d39c82ecc2a57a59315?family=Albra+Light+Italic"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Syne:wght@400..800&display=swap"
+        rel="stylesheet">
+
+    <!-- IMPORTS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollSmoother.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-white text-black font-sans">
+
+    <!-- website intro animation (wobbly curtain water thingy from bottom to top) -->
+
+    <!-- Navbar -->
+    <nav class="navbar py-5 md:py-7 fixed z-500 w-full flex justify-between px-4 md:px-10 lg:px-20">
+
+        <a href="#" class="px-5 items-center">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none"
+                    class="mix-blend-difference">
+                    <circle cx="20.5" cy="20.5" r="20.5" fill="#585648" />
+                    <path
+                        d="M6.14 12.94L6.22 12.42L6.32 12.34C7.09333 12.38 8.04 12.4 9.16 12.4C9.42667 12.4 10.3467 12.3867 11.92 12.36C12.16 12.3467 12.6333 12.34 13.34 12.34C14.5667 12.34 15.5133 12.6 16.18 13.12C16.86 13.64 17.2333 14.4933 17.3 15.68C17.3 17 16.8133 18.12 15.84 19.04C14.88 19.96 13.7333 20.42 12.4 20.42C11.7733 20.42 11.12 20.3 10.44 20.06L10.34 19.42L10.4 19.36C10.84 19.5333 11.3067 19.62 11.8 19.62C12.7333 19.62 13.44 19.2267 13.92 18.44C14.4133 17.64 14.66 16.74 14.66 15.74C14.66 14.0733 13.82 13.24 12.14 13.24C11.5667 13.24 11.08 13.2933 10.68 13.4C10.52 14.16 10.3133 15.28 10.06 16.76L9.42 20.44C9.22 21.48 9.01333 22.8 8.8 24.4C8.77333 24.64 8.76 24.7733 8.76 24.8C8.76 24.9733 8.82 25.1 8.94 25.18C9.03333 25.2733 9.23333 25.3333 9.54 25.36L10.58 25.42L10.64 25.5L10.6 25.98L10.5 26.06C9.55333 26.02 8.56 26 7.52 26C6.28 26 5.2 26.02 4.28 26.06L4.22 26L4.28 25.5L4.36 25.42C5.12 25.42 5.59333 25.3667 5.78 25.26C5.88667 25.18 5.98 25.0467 6.06 24.86C6.15333 24.6467 6.32667 23.78 6.58 22.26L7.48 17.1C7.81333 15.26 7.98 14.1 7.98 13.62C7.98 13.2867 7.69333 13.1067 7.12 13.08L6.22 13.02L6.14 12.94ZM24.6227 23.78L24.7227 23.8L24.9427 24.2L24.9227 24.32C22.9493 25.72 21.416 26.42 20.3227 26.42C19.6293 26.42 19.0427 26.2 18.5627 25.76C18.0827 25.32 17.8427 24.7533 17.8427 24.06C17.8427 23.3 17.976 22.3867 18.2427 21.32C18.5227 20.24 18.856 19.4467 19.2427 18.94C19.6427 18.4067 20.316 17.88 21.2627 17.36C22.2093 16.8267 23.0027 16.56 23.6427 16.56C24.2293 16.56 24.6893 16.7 25.0227 16.98C25.3693 17.26 25.5427 17.68 25.5427 18.24C25.5427 20.1867 23.7627 21.4933 20.2027 22.16C20.136 22.72 20.1027 23.1467 20.1027 23.44C20.1027 24.5333 20.5827 25.08 21.5427 25.08C22.3293 25.08 23.356 24.6467 24.6227 23.78ZM20.2827 21.62C21.616 21.3133 22.5093 20.8533 22.9627 20.24C23.4427 19.6133 23.6827 19.0267 23.6827 18.48C23.6827 18.1733 23.596 17.9333 23.4227 17.76C23.236 17.6 23.0027 17.52 22.7227 17.52C22.2027 17.52 21.7493 17.7933 21.3627 18.34C20.9627 18.94 20.6027 20.0333 20.2827 21.62ZM26.8513 19.08L26.7113 19.06L26.5513 18.7L26.5713 18.56C28.4246 17.2 29.6579 16.52 30.2713 16.52C30.6979 16.52 30.9113 16.78 30.9113 17.3C30.9113 17.66 30.7313 18.56 30.3713 20L29.5513 23.22C29.4446 23.58 29.3913 23.9067 29.3913 24.2C29.3913 24.48 29.5046 24.62 29.7313 24.62C30.1179 24.62 30.5779 24.3067 31.1113 23.68C31.6446 23.04 32.0579 22.4533 32.3513 21.92C33.2979 20.1733 33.8313 18.5333 33.9513 17C34.5379 16.96 35.2379 16.8267 36.0513 16.6L36.2313 16.78C35.0313 20.7267 34.4313 23.2267 34.4313 24.28C34.4313 24.52 34.5246 24.64 34.7113 24.64C34.8313 24.64 35.0446 24.54 35.3513 24.34C35.6713 24.14 35.8913 23.98 36.0113 23.86H36.1312L36.3513 24.24L36.3112 24.36C35.2446 25.1333 34.4979 25.66 34.0713 25.94C33.9246 26.0467 33.8313 26.1067 33.7913 26.12C33.4446 26.3067 33.1379 26.4 32.8713 26.4C32.4446 26.4 32.2313 26.1267 32.2313 25.58C32.2313 25.1267 32.3979 24.3 32.7313 23.1L33.1113 21.62C32.4579 22.8467 31.6179 23.9533 30.5913 24.94C29.5379 25.9533 28.6846 26.46 28.0313 26.46C27.4179 26.46 27.1113 26.0733 27.1113 25.3C27.1113 25.06 27.1313 24.8 27.1713 24.52C27.2646 24.0667 27.4113 23.48 27.6113 22.76C28.1713 20.68 28.4513 19.36 28.4513 18.8C28.4513 18.52 28.3513 18.38 28.1513 18.38C27.9913 18.38 27.5579 18.6133 26.8513 19.08ZM30.0513 13.52L31.2113 12.64L31.4713 12.76C31.5379 13.24 31.7446 13.6067 32.0913 13.86C32.4246 14.14 32.8246 14.28 33.2913 14.28C34.4913 14.28 35.2113 13.7533 35.4513 12.7L35.6913 12.6L35.9513 13.66C35.0979 14.7933 34.0113 15.36 32.6913 15.36C31.1313 15.36 30.2513 14.7467 30.0513 13.52Z"
+                        fill="white" />
+                </svg>
+            </div>
+        </a>
+
+        <ul class="container mx-auto flex justify-center items-center space-x-4 md:space-x-6 lg:space-x-10 select-none">
+
+            <a href="index.html" class="link">
+                <span class="mask">
+                    <div class="link-container">
+                        <span class="link-title1 title text-lg md:text-3xl font-medium text-gray-500">About,</span>
+                        <span class="link-title2 title text-lg md:text-3xl font-medium text-gray-500">About,</span>
+                    </div>
+                </span>
+            </a>
+
+            <a href="/projects.html" class="link">
+                <span class="mask">
+                    <div class="link-container ">
+                        <span class="link-title1 title text-lg md:text-3xl font-medium text-black">Projects,</span>
+                        <span class="link-title2 title text-lg md:text-3xl font-medium text-black">Projects,</span>
+                    </div>
+                </span>
+            </a>
+
+            <a href="/contact.html" class="link">
+                <span class="mask">
+                    <div class="link-container">
+                        <span class="link-title1 title text-lg md:text-3xl font-medium text-gray-500">Contact,</span>
+                        <span class="link-title2 title text-lg md:text-3xl font-medium text-gray-500">Contact,</span>
+                    </div>
+                </span>
+            </a>
+        </ul>
+
+        </div>
+    </nav>
+
+    <div class="container-1 px-5 pt-40 md:px-20">
+        <!-- Header / Hero Section -->
+
+
+
+        <div class="grid gap-6 mb-8 grid-cols-2 grid-rows-2 md:grid-cols-5 md:grid-rows-2  ">
+            <div class="col-span-4 row-span-6 pt-8  ">
+                <div id="mask-shape">
+                    <h1 id="title-style-1" class="hover-anim text-3xl md:text-9xl">FEATURED</h1>
+                    <h1 id="title-style-2-italic" class="hover-anim text-3xl md:text-9xl">projects</h1>
+                </div>
+
+                <svg class="">
+                    <defs>
+                        <clipPath id="mask">
+                            <!-- make the clip a square -->
+                            <rect x="0" y="-33" width="300%" height="115%" />
+                </svg>
+                </clipPath>
+                </defs>
+                </svg>
+
+            </div>
+
+
+        </div>
+
+        <div class="project-grid grid grid-cols-3  gap-y-64 ">
+            <div class="w-full h-auto">
+                <img src="https://loremflickr.com/200/200?random=1" alt="Image Description" class="w-1/2 object-cover">
+            </div>
+
+            <div class="w-full h-auto">
+                <img src="https://loremflickr.com/200/200?random=2" alt="Image Description" class="w-1/2 object-cover">
+            </div>
+
+            <div class="w-full h-auto">
+                <img src="https://loremflickr.com/200/200?random=3" alt="Image Description" class="w-1/2 object-cover">
+            </div>
+
+            <div class="w-full h-auto">
+                <img src="https://loremflickr.com/200/200?random=4" alt="Image Description" class="w-1/2 object-cover">
+            </div>
+
+            <div class="w-full h-auto">
+                <img src="https://loremflickr.com/200/200?random=5" alt="Image Description" class="w-1/2 object-cover">
+            </div>
+
+            <div class="w-full h-auto">
+                <img src="https://loremflickr.com/200/200?random=6" alt="Image Description" class="w-1/2 object-cover">
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <script>
+            window.onload = function () {
+                document.querySelector(".preloader").style.display = "none";
+            }
+            // image parallax w/ scrolltrigger and scroll smoother with per-letter text reveal animation for the title (the title animation appears from the bottom)
+
+            gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+            gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+
+
+
+            let smoother = ScrollSmoother.create({
+                content: ".container-1",
+                smooth: 1.5,
+                effects: true,
+            });
+
+            // make the image animated on scroll      
+            gsap.fromTo(
+                ".image-animate-onshow ",
+                { y: 100, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 2,
+                    scrollTrigger: {
+                        trigger: ".image-animate-onshow img",
+                        start: "top 80%",
+                        end: "bottom 20%",
+                    },
+                }
+            );
+
+            //Parallax effect for the image
+            smoother.effects(".container-1 img", {
+                speed: 0.7,
+            });
+
+            //Text reveal animation for the title
+            const title1 = document.getElementById("title-style-1");
+            const title2 = document.getElementById("title-style-2-italic");
+
+            const titleChars1 = title1.textContent.split("");
+            const titleChars2 = title2.textContent.split("");
+
+            title1.innerHTML = titleChars1
+                .map((char) => `<span>${char}</span>`)
+                .join("");
+            title2.innerHTML = titleChars2
+                .map((char) => `<span>${char}</span>`)
+                .join("");
+
+            //Split type for the title
+            new SplitType("#title-style-1", { types: "chars, words" });
+            new SplitType("#title-style-2-italic", { types: "chars, words" });
+
+
+
+            gsap.fromTo(
+                "#title-style-1 span",
+                {
+                    y: 150,
+                    opacity: 0,
+                },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 2,
+                    stagger: 0.05,
+                    ease: "power2.out",
+                    delay: 0.2, // Added delay of 0.2 seconds
+                    scrollTrigger: {
+                        trigger: "#title-style-1",
+                        start: "top 90%",
+                        end: "bottom 20%",
+                    },
+                }
+            );
+
+            gsap.fromTo(
+                "#title-style-2-italic span",
+                {
+                    y: 150,
+                    opacity: 0
+                },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 2,
+                    stagger: 0.1,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                        trigger: "#title-style-2-italic",
+                        start: "top 90%",
+                        end: "bottom 20%",
+                    },
+                }
+            );
+
+
+            gsap.fromTo(
+                ".text-animate-onshow span",
+                { y: 50, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 1,
+                    stagger: 0.1,
+                    scrollTrigger: {
+                        trigger: ".text-animate-onshow span",
+                        start: "top 80%",
+                        end: "bottom 20%",
+                    },
+                }
+            );
+
+            gsap.fromTo(
+                ".project-grid div",
+                { opacity: 0, scale: 0.8, delay:2},
+                {
+                    delay:1,
+                    opacity: 1,
+                    ease: "power2.out",
+                    scale: 1,
+                    duration: 1,
+                    stagger: 0.2,
+                });
+
+
+
+
+
+
+
+
+
+        </script>
+</body>
+
+</html>
